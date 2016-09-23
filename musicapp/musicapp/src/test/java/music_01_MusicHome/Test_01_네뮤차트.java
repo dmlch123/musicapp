@@ -111,6 +111,8 @@ public class Test_01_네뮤차트 extends Utilites {
 		
 		driver.quit();
 		util.appium_tearDown();
+		
+		// commit 테스트를 위한 주석
 	}
 	
 }
