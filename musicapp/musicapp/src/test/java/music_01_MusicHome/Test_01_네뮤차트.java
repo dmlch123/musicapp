@@ -38,14 +38,14 @@ public class Test_01_네뮤차트 extends Utilites {
 		
 		WebElement 네뮤차트 = driver.findElementById(Module.TitleTextID);
 		assertEquals("네이버뮤직 차트",네뮤차트.getText());
-/*	
+
 		util.툴박스_듣기();
 		util.툴박스_재생목록();
 		util.툴박스_내리스트();
 		util.툴박스_저장();
 		util.전체듣기();
 		util.재생버튼();
-*/		
+	
 		//top100 필터 종합,국내,해외 선택확인
 		util.드롭박스형_필터_확인(TOP100);
 		
