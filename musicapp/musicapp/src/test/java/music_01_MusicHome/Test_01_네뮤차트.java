@@ -66,16 +66,16 @@ public class Test_01_네뮤차트 extends Utilites {
 		//top100으로 복귀
 		WebElement top100 = driver.findElementByXPath(Module.TextClass+"[@text='TOP 100']");
         util.선택확인(top100);
-/*
+
 		util.기능더보기_앨범상세정보();
 		util.기능더보기_아티스트상세정보();
 		util.기능더보기_저장();
 		util.기능더보기_공유();
 		util.기능더보기_태그에_이_곡을_추가();
         util.기능더보기_좋아요();
-*/
+
 	}
-	/*
+	
 	@Test
 	public void b_뮤지션리그_100_테스트() throws Exception{
 
@@ -105,7 +105,7 @@ public class Test_01_네뮤차트 extends Utilites {
 		util.기능더보기_공유();
 		
 	}
-	*/
+	
 	@AfterClass
 	public void tearDown() throws Exception {
 		
