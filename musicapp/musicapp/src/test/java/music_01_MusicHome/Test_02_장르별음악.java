@@ -36,7 +36,7 @@ public class Test_02_장르별음악 extends Utilites {
 		Thread.sleep(2000);
 		
 		String[] 장르별탭 = new String[] {"발라드","댄스","힙합","록/포크","트로트" };
-	/*	
+	
 		for (int i = 0; i < 장르별탭.length; i++) { 
 
         System.out.println("진입 국내장르 출력:" + 장르별탭[i]); 
@@ -49,12 +49,12 @@ public class Test_02_장르별음악 extends Utilites {
     	
     	driver.navigate().back();
 		}
-		*/
+		
 		driver.findElementByXPath(Module.TextClass+"[@text='발라드']").click();
 		WebElement 발라드 = driver.findElementById(Module.TitleTextID);
 		assertEquals("발라드",발라드.getText());
 		util.노출확인(Module.ListviewClass);
-   /*	
+   	
 		util.툴박스_듣기();
 		util.툴박스_재생목록();
 		util.툴박스_내리스트();
@@ -69,7 +69,7 @@ public class Test_02_장르별음악 extends Utilites {
 		util.기능더보기_공유();
 		util.기능더보기_태그에_이_곡을_추가();
 		util.기능더보기_좋아요();
-	*/	
+		
 		//장르별 음악 > 최신앨범 탭 첫번째앨번end 진입확인
 		Thread.sleep(1000);
 		WebElement 최신앨범탭 = driver.findElementByXPath(Module.ButtonClass+"[@text='최신 앨범']");
@@ -150,7 +150,7 @@ public class Test_02_장르별음악 extends Utilites {
         util.선택확인(TOP100탭);
 
         Thread.sleep(1000);
-	/*	
+		
 		util.툴박스_듣기();
 		util.툴박스_재생목록();
 		util.툴박스_내리스트();
@@ -165,7 +165,7 @@ public class Test_02_장르별음악 extends Utilites {
 		util.기능더보기_공유();
 		util.기능더보기_태그에_이_곡을_추가();
 		util.기능더보기_좋아요();
-	*/	
+		
 		//장르별 음악 > 최신앨범 탭 첫번째앨번end 진입확인
 		Thread.sleep(1000);
 		WebElement 최신앨범탭 = driver.findElementByXPath(Module.ButtonClass+"[@text='최신 앨범']");
@@ -203,9 +203,9 @@ public class Test_02_장르별음악 extends Utilites {
 	
 	@AfterClass
 	public void tearDown() throws Exception {
-		
 		driver.quit();
 		util.appium_tearDown();
+
 	}
 	
 }

@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="music_01_MusicHome.Test_01_네뮤차트">
+      <class name="music_01_MusicHome.Test_04_무료음악">
         <methods>
-          <include name="a_네이버뮤직차트_테스트"/>
           <include name="setUp"/>
+          <include name="무료음악_테스트"/>
         </methods>
-      </class> <!-- music_01_MusicHome.Test_01_네뮤차트 -->
+      </class> <!-- music_01_MusicHome.Test_04_무료음악 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

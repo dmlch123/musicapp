@@ -151,8 +151,8 @@ public class Test_06_뮤지션리그 extends Utilites{
 	}
 	@AfterClass
 	public void tearDown() throws Exception {
-		
 		driver.quit();
 		util.appium_tearDown();
+
 	}
 }

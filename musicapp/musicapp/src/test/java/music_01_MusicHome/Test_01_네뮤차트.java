@@ -80,14 +80,14 @@ public class Test_01_네뮤차트 extends Utilites {
 	public void b_뮤지션리그_100_테스트() throws Exception{
 
 		// 네뮤차트 진입 확인
-		driver.findElementById(Module.MenuopenID).click();
-		util.노출확인(Module.SidemenuClass);
-	
-		driver.findElementByXPath(Module.TextClass+"[@text='네이버뮤직 차트']").click();
-		util.노출확인(Module.ListviewClass);
-
-		WebElement 네뮤차트 = driver.findElementById(Module.IDname+"/title_text");
-		assertEquals("네이버뮤직 차트", 네뮤차트.getText());
+//		driver.findElementById(Module.MenuopenID).click();
+//		util.노출확인(Module.SidemenuClass);
+//		
+//		driver.findElementByXPath(Module.TextClass+"[@text='네이버뮤직 차트']").click();
+//		util.노출확인(Module.ListviewClass);
+//		
+//		WebElement 네뮤차트 = driver.findElementById(Module.TitleTextID);
+//		assertEquals("네이버뮤직 차트",네뮤차트.getText());
 
 		// top100 > 뮤지션리그탭 진입
 		WebElement 뮤지션리그_100 = driver.findElementByXPath(Module.TextClass + "[@text='뮤지션 리그 100']");
@@ -111,7 +111,7 @@ public class Test_01_네뮤차트 extends Utilites {
 		
 		driver.quit();
 		util.appium_tearDown();
-		
+
 		// commit 테스트를 위한 주석
 	}
 	

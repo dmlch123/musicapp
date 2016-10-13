@@ -140,8 +140,8 @@ Utilites util = new Utilites();
 	
 	@AfterClass
 	public void tearDown() throws Exception {
-		
 		driver.quit();
 		util.appium_tearDown();
+
 	}
 }

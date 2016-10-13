@@ -71,5 +71,7 @@ public class Test_03_최근들은음악 extends Utilites {
 	public void tearDown() throws Exception {
 
 		driver.quit();
+		util.appium_tearDown();
+
 	}
 }

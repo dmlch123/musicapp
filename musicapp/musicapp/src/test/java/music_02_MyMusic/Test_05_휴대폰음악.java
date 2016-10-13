@@ -125,5 +125,7 @@ public class Test_05_휴대폰음악 extends Utilites{
 	public void tearDown() throws Exception {
 
 		driver.quit();
+		util.appium_tearDown();
+
 	}
 }

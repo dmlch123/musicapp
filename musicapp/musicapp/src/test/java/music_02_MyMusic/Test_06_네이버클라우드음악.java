@@ -63,6 +63,8 @@ public class Test_06_네이버클라우드음악  extends Utilites{
 	public void tearDown() throws Exception {
 
 		driver.quit();
+		util.appium_tearDown();
+
 	}
 
 }

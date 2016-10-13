@@ -70,5 +70,7 @@ public class Test_07_구매_대여내역 extends Utilites{
 	public void tearDown() throws Exception {
 
 		driver.quit();
+		util.appium_tearDown();
+
 	}
 }

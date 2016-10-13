@@ -37,18 +37,16 @@ public class Utilites extends Module {
 		
 		nmc.setUp();
 		nmc.findAvailableDevice_test();
-//		nmc.openDevice_test();
-//		nmc.openAvailableDevices_test();
-//		nmc.openDeviceAppInstall();
+		nmc.openDevice();
 		
-		File appDir = new File("C:/Users/NAVER/workspace/musicapp/musicapp/App");
-		File app = new File(appDir, "Music_3.3.4-release.apk");
+		File appDir = new File("C:/Users/NAVER/git/musicapp/musicapp/musicapp/App");
+		File app = new File(appDir, "Music_3.3.6.5-qa-unaligned.apk");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
 		capabilities.setCapability("platformName", "Android");
 		System.out.println(cmd.getDeviceSerial().get(0));
 		capabilities.setCapability("deviceName", cmd.getDeviceSerial().get(0)); //갤s4_4.4.2
-		capabilities.setCapability("platformVersion",nmc.buildName);
+		capabilities.setCapability("platformVersion",nmc.build);
 		capabilities.setCapability("app", app.getAbsolutePath());
 		capabilities.setCapability("apppackage", "com.nhn.android.music");
 
@@ -62,7 +60,7 @@ public class Utilites extends Module {
 
 		// 앱실행시 태그안내 팝업 닫기
 		int i;
-		for (i = 1; i <= 3; i++) {
+		for (i = 1; i <= 3; i++) {                                                                             
 			좌우_스크롤(0.6);
 			Thread.sleep(500);
 		}

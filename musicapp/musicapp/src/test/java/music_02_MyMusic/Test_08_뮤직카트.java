@@ -89,5 +89,7 @@ public class Test_08_뮤직카트  extends Utilites{
 	public void tearDown() throws Exception {
 
 		driver.quit();
+		util.appium_tearDown();
+
 	}
 }

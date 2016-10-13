@@ -98,8 +98,8 @@ public class Test_05_뮤직비디오 extends Utilites{
 
 	@AfterClass
 	public void tearDown() throws Exception {
-
 		driver.quit();
 		util.appium_tearDown();
+
 	}
 }

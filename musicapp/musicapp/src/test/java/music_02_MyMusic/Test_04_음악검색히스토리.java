@@ -55,5 +55,7 @@ public class Test_04_음악검색히스토리 extends Utilites {
 	public void tearDown() throws Exception {
 
 		driver.quit();
+		util.appium_tearDown();
+
 	}
 }

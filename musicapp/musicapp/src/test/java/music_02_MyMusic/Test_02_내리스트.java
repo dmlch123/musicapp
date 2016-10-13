@@ -221,6 +221,8 @@ public class Test_02_내리스트 extends Utilites{
 	public void tearDown() throws Exception {
 
 		driver.quit();
+		util.appium_tearDown();
+
 	}
 
 }

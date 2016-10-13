@@ -221,6 +221,8 @@ public class Test_01_MY좋아요 extends Utilites{
 	public void tearDown() throws Exception {
 
 		driver.quit();
+		util.appium_tearDown();
+
 	}
 
 }
